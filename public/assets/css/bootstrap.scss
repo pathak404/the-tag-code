@@ -1,0 +1,15 @@
+
+// redefine colors
+$enable-gradients: true;
+
+$primary: #22c1c3;
+$info: #fdbb2d;
+$light: #f4f6f8; 
+// $light: #f8f9fa; 
+// $light: #F3F6F9;
+
+$body-bg: #f4f4f4;
+$body-color: #151515;
+
+@import "./bootstrap/scss/bootstrap";
+
