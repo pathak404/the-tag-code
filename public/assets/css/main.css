@@ -63,6 +63,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
+  color: #222;
 }
 
 a {
@@ -70,13 +71,14 @@ a {
   word-break: break-all;
 }
 
-p.paragraph {
-  color: #555555;
+.paragraph, .lead, span {
+  color: #606060;
 }
 
 .paragraph2 {
   color: #9da6b3;
 }
+
 
 .btn-primary {
   background: linear-gradient(
@@ -619,7 +621,7 @@ nav ul.navMenuList > li.mobile-nav-link {
     margin-left: -2rem;
   }
   nav.open-menu ul.navMenuList > li a.nav-link {
-    animation: nav-link-anm 0.7s linear forwards;
+    animation: nav-link-anm 0.6s linear forwards;
   }
   nav ul.navMenuList > li.mobile-nav-link {
     display: block;
@@ -748,12 +750,22 @@ nav ul.navMenuList > li.mobile-nav-link {
 
 /* end mobile nav */
 
+
+
 /* home */
 
 .home main.hero {
   width: 100%;
   height: auto;
+  min-height: 600px;
   background-color: #f3f6f9;
+}
+
+.home main.hero .container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 
 /* for all */
@@ -776,20 +788,19 @@ img.hero-img {
   font-size: 2rem;
   color: #fff;
   border-radius: 0.75rem;
+  width: 4rem;
+  height: 4rem;
 }
 .service-icon i,
 .feature-icon i {
   font-size: 1em;
 }
-.feature-icon{
+.home.feature-icon{
 width: 5rem;
 height: 5rem;
-margin-bottom: 0.1rem;
+margin-bottom: 0rem;
 }
-.service-icon{
-  width: 4rem;
-  height: 4rem;
-  }
+
 
 section.services {
   width: 100%;
@@ -855,7 +866,9 @@ section.services {
 footer a:hover {
   color: var(--tc-primary) !important;
 }
-
+footer ul li a {
+  color: #5b5b5b !important;
+}
 footer .copyright {
   width: 100%;
   height: auto;
@@ -888,6 +901,7 @@ footer img {
 @media only screen and (max-width: 768px) {
   footer .copyright .copyrightWrap p {
     flex: 100%;
+    font-size: 13px;
   }
 }
 
@@ -1226,3 +1240,9 @@ section.hero img.hero-img {
 }
 
 
+
+@media only screen and (max-width: 500px) {
+  p.lead, p.paragraph2, p.paragraph1 {
+    font-size: 17px;
+  }
+}

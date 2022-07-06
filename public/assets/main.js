@@ -80,7 +80,7 @@ function saveData(name, email, phone, message) {
             time: myTimestamp});
                 console.log("Document written with ID: ", docRef.id);
                 document.getElementById(formID).reset();
-                mainModal("Thank You", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut amet aliquid, est itaque a corrupti, eos assumenda, molestias enim consequatur totam eius illum sequi sapiente perspiciatis soluta aperiam distinctio sunt!");
+                mainModal("Thank You", "Your Form has been successfully submited. We will reply as soon as possible.");
 
             })
             .catch((error) => {
@@ -106,7 +106,7 @@ function saveData(name, email, phone, message) {
             time: myTimestamp});
                 console.log("Document written with ID: ", docRef.id);
                 document.getElementById(formID).reset();
-                mainModal("Thank You", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut amet aliquid, est itaque a corrupti, eos assumenda, molestias enim consequatur totam eius illum sequi sapiente perspiciatis soluta aperiam distinctio sunt!");
+                mainModal("Thank You", "Your Form has been successfully submited. We will reply as soon as possible.");
 
             })
             .catch((error) => {
