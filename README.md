@@ -16,11 +16,3 @@ Request Service
 
 - [@Abhishek-Kumar-Pathak](https://www.github.com/Abhishek-Kumar-Pathak)
 
-
-## Appendix
-
-A job (Upload to hosting) will run if any event ouccers on main branch
-
-
-Please adhere to this project's `code of conduct`.
-
